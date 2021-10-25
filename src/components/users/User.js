@@ -6,7 +6,7 @@ import GithubContext from "../../context/github/githubContext";
 
 const User = ({ match }) => {
 	const githubContext = useContext(GithubContext);
-	const { getUser, loading, user, getUserRepo, repos, } = githubContext;
+	const { getUser, loading, user, getUserRepo, repos } = githubContext;
 	useEffect(() => {
 		getUser(match.params.login);
 		getUserRepo(match.params.login);
@@ -106,6 +106,5 @@ const User = ({ match }) => {
 		</Fragment>
 	);
 };
-
 
 export default User;

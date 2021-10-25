@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import UserItems from "./UserItems";
 import Spinner from "../layouts/Spinner";
 import GithubContext from "../../context/github/githubContext";
@@ -14,12 +14,10 @@ function userComponent(users) {
 }
 
 const Users = () => {
-    const githubContext = useContext(GithubContext)
-    const {loading, users} = githubContext;
+    const githubContext = useContext(GithubContext);
+    const { loading, users } = githubContext;
     return loading ? <Spinner /> : userComponent(users);
 };
-
-
 
 // css style
 const userStyle = {

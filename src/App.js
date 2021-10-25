@@ -15,28 +15,20 @@ const App = () => {
   return (
     <GithubState>
       <AlertState>
-      <Router>
-        <div>
-          <Navbar title="Github Finder" />
-          <div className="container">
-            <Alert/>
-            <Switch>
-              <Route
-                exact
-                path="/"
-                component={Home}
-              />
-              <Route exact path="/about" component={About} />
-              <Route
-                exact
-                path="/user/:login"
-                component={User}
-              />
-              <Route component={NotFound} />
-            </Switch>
+        <Router>
+          <div>
+            <Navbar title="Github Finder" />
+            <div className="container">
+              <Alert />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/user/:login" component={User} />
+                <Route component={NotFound} />
+              </Switch>
+            </div>
           </div>
-        </div>
-      </Router>
+        </Router>
       </AlertState>
     </GithubState>
   );
