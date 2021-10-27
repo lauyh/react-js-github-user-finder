@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Github Finder
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application is using Github api to search for the user and display it.
+The aim of this project is to learn on creating a web application with React.
+This app is hosted on Netlify and the link to this app is https://objective-ardinghelli-e82021.netlify.app
 
 ## Available Scripts
 
